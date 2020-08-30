@@ -22,7 +22,7 @@ PreCommit:
 
 PrePush:
   Brakeman:
-    enable: true
+    enabled: true
 #
 #  TrailingWhitespace:
 #    enabled: true
