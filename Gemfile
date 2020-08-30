@@ -41,6 +41,9 @@ group :development, :test do
 
   # Better commits
   gem 'overcommit', '~> 0.55.0'
+
+  # Checks for vulnerabilites
+  gem 'brakeman'
 end
 
 group :development do
