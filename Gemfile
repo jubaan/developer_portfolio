@@ -34,6 +34,10 @@ group :development, :test do
 
   # Rubocop linter
   gem 'rubocop', '~> 0.89.1'
+
+  # Preview html and css changes
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :development do
