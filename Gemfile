@@ -33,11 +33,14 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 
   # Rubocop linter
-  gem 'rubocop', '~> 0.89.1'
+  gem 'rubocop', '~> 0.89.1', require: false
 
   # Preview html and css changes
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+
+  # Better commits
+  gem 'overcommit', '~> 0.55.0'
 end
 
 group :development do
