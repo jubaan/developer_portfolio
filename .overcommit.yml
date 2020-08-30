@@ -21,11 +21,19 @@ PreCommit:
 
   RuboCop:
     enabled: true
+    description: 'Analyze with RuboCop'
     on_warn: fail # Treat all warnings as failures
+
+  Stylelint:
+    enabled: false
+    description: 'Check styles with Stylelint'
+    required_executable: 'stylelint'
+    flags: ['-f', 'compact']
 
 PrePush:
   Brakeman:
     enabled: true
+    on_warn: true
 #
 #  TrailingWhitespace:
 #    enabled: true
