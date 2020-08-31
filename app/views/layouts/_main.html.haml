@@ -1,14 +1,17 @@
-%main.container
-  .bg-hero
-  %h2.hero__title Hello!
-  %p.hero__description
-    I'm
-    %span.description__name Julio Añoveros
-    a Remote Full Stack Web Developer, based in México.
-  %p.hero__hashtag #OpenToWork
-  .hero__contact.d-flex
-    %p.hero__email julio.ab@outlook.com
-    %p.hero__whatsapp +52 722 897 4711
-  %p Available for Work / Freelance
+%main.bg-hero
+  .container
+    %p.hero__title
+      I'm
+      %span.hero__name Julio Añoveros
+      %br
+      a Remote Full Stack Web Developer, based in México.
+    %p.hero__hashtag #OpenToWork
+    .hero__contact.d-flex
+      %p.hero__email julio.ab@outlook.com
+      %p.hero__whatsapp +52 722 897 4711
+    = link_to 'https://www.github.com/jubaan', target: '_blank',
+      class: 'availability' do
+      %i.fas.fa-circle.available
+      Available for Work / Freelance
 
 
