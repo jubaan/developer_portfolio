@@ -1,8 +1,3 @@
-* a {
-  color: black;
-  text-decoration: none;
-}
-
 .offscreen {
   border: 0;
   clip: rect(0 0 0 0);
@@ -32,3 +27,16 @@
 .social__item {
   margin-left: 1rem;
 }
+
+.social__link {
+  font-size: 1.3rem;
+}
+
+.navbar__brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+
+
+
