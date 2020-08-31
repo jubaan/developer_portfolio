@@ -1,0 +1,33 @@
+/* css variables */
+:root {
+  --primary-color: #432e30;
+  --primary-color-light: #8e7474;
+  --accent-color: #fe6a6b;
+  --accent-color-light: #ffe4e4;
+  --accent-color-dark: #b94b4c;
+  --white-color: #fafbfc;
+  --light-gray-color: #c6cbd1;
+  --medium-gray-color: #959da5;
+  --dark-gray-color: #444d56;
+  --bg-color: #f8f8fa;
+  --code-bg-color: #f0e8e8;
+}
+
+/* code */
+.code {
+  border-radius: 3px;
+  font-family: Space Mono, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  background: var(--bg-color);
+  border: 1px solid var(--code-bg-color);
+  color: var(--primary-color-light);
+}
+
+.code--block {
+  white-space: pre-line;
+  padding: 0 1.5rem;
+}
+
+.code--inline {
+  padding: 3px 6px;
+  font-size: 80%;
+}

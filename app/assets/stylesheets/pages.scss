@@ -1,3 +1,4 @@
+/* layout */
 .offscreen {
   border: 0;
   clip: rect(0 0 0 0);
@@ -9,34 +10,105 @@
   width: 1px;
 }
 
-.navbar {
-  justify-content: space-between;
-  padding: 2rem 3rem 1rem;
+.container {
+  max-width: 1224px;
+  margin: auto;
+  padding: 0 6rem;
 }
 
+/* header */
+.header {
+  position: fixed;
+  top: 0;
+}
+
+/* utilities */
 .d-flex {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-.container {
-  max-width: 90rem;
-  margin: auto;
+/* utilities */
+.navbar {
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
 .social__item {
   margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  margin-top: 2px;
 }
 
-.social__link {
-  font-size: 1.3rem;
+.social__link i {
+  font-size: 1.7rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 .navbar__brand {
-  font-size: 1.3rem;
   font-weight: 700;
+  padding: 1px 15px 1px 1px;
+  border-radius: 40px;
+  background-color: white;
+  color: black;
 }
 
+.navbar__brand-img {
+  border-radius: 50%;
+  background: url('https://media-exp1.licdn.com/dms/image/C5603AQF7Zh_fGADO0g/profile-displayphoto-shrink_200_200/0?e=1604534400&v=beta&t=3vW24A2XyEFe6WNrvL24rKGivQtFUmownGdnKkGRLUo');
+  background-size: cover;
+  height: 2.3rem;
+  width: 2.3rem;
+  margin-right: 0.5rem;
+}
 
+.bg-hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 20rem;
+  right: 0;
+  // background: url('https://images.unsplash.com/photo-1445620466293-d6316372ab59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80') no-repeat;
+  background: url('https://images.unsplash.com/photo-1598829846056-edced86f2efc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+  //   background: url('https://images.unsplash.com/flagged/photo-1572465213253-31b7e7f634ec?ixlib=rb-1.2.1&auto=format&fit=crop&w=659&q=80') 0% 50% no-repeat;
+  background-size: cover;
+  z-index: -99;
+}
 
+// .hero__title {
+//   margin-top: 7rem;
+//   // font-family: 'Oswald', 'sans-serif';
+//   font-weight: 700;
+//   font-size: 6rem;
+// }
 
+// .hero__description {
+//   font-size: 3rem;
+// }
+
+// .hero__hashtag {
+//   font-size: 1.5rem;
+// }
+
+// .hero__contact {
+//   margin: 4rem 0;
+// }
+
+// .hero__email {
+//   padding: 4px 15px;
+//   border-radius: 40px;
+//   background-color: white;
+//   color: black;
+// }
+
+// .hero__whatsapp {
+//   padding: 4px 15px;
+// }
