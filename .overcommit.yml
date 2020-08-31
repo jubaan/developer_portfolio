@@ -28,23 +28,33 @@ PreCommit:
 
   Stylelint:
     enabled: false
+    on_warn: fail # Treat all warnings as failures
     description: 'Check styles with Stylelint'
     required_executable: 'stylelint'
     flags: ['-f', 'compact']
+
+  HamlLint:
+    enabled: true
+    on_warn: fail # Treat all warnings as failures
+    description: 'Analyze with haml-lint'
+    required_executable: 'haml-lint'
+    install_command: 'gem install haml-lint'
+    flags: ['--no-summary']
+    include: '**/*.haml'
 
 PrePush:
   Brakeman:
     enabled: true
     on_warn: true
-#
-#  TrailingWhitespace:
-#    enabled: true
-#    exclude:
-#      - '**/db/structure.sql' # Ignore trailing whitespace in generated files
-#
-#PostCheckout:
-#  ALL: # Special hook name that customizes all hooks of this type
-#    quiet: true # Change all post-checkout hooks to only display output on failure
-#
-#  IndexTags:
-#    enabled: true # Generate a tags file with `ctags` each time HEAD changes
+      #
+      #  TrailingWhitespace:
+      #    enabled: true
+      #    exclude:
+      #      - '**/db/structure.sql' # Ignore trailing whitespace in generated files
+      #
+      #PostCheckout:
+      #  ALL: # Special hook name that customizes all hooks of this type
+      #    quiet: true # Change all post-checkout hooks to only display output on failure
+      #
+      #  IndexTags:
+      #    enabled: true # Generate a tags file with `ctags` each time HEAD changes

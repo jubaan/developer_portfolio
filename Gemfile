@@ -56,6 +56,11 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  # Haml
+  gem 'haml', '~> 5.1', '>= 5.1.2'
+  gem 'haml-rails', '~> 2.0', '>= 2.0.1'
+  # Haml linter
+  gem 'haml_lint', '~> 0.35.0'
 end
 
 group :test do
