@@ -38,7 +38,6 @@ PreCommit:
     on_warn: fail # Treat all warnings as failures
     description: 'Analyze with haml-lint'
     required_executable: 'haml-lint'
-    install_command: 'gem install haml-lint'
     flags: ['--no-summary']
     include: '**/*.haml'
 
