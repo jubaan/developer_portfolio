@@ -44,6 +44,9 @@ group :development, :test do
 
   # Checks for vulnerabilites
   gem 'brakeman'
+
+  # Rspec
+  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
 end
 
 group :development do
@@ -56,7 +59,6 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
