@@ -8,3 +8,22 @@
   position: absolute;
   width: 1px;
 }
+
+.navbar {
+  justify-content: space-between;
+  padding: 2rem 3rem 1rem;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 90rem;
+  margin: auto;
+}
+
+.social__item {
+  margin-left: 1rem;
+}
