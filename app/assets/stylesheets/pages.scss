@@ -46,7 +46,7 @@
 }
 
 .social__link i:hover {
-  color: #f2efea;
+  color: #313e50;
 }
 
 .navbar__brand {
@@ -59,11 +59,6 @@
 .navbar__brand::after {
   content: "Hello!";
 }
-
-// .navbar__brand:hover.shade,
-// .navbar__brand:hover::after {
-//   content: "I'm Julio Añoveros";
-// }
 
 .navbar__brand-img {
   border-radius: 50%;
@@ -105,12 +100,12 @@
   backdrop-filter: blur(2px);
 }
 
-// @supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
-//   .blur {
-//     -webkit-backdrop-filter: blur(2px);
-//     backdrop-filter: blur(2px);
-//   }
-// }
+@supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
+  .blur {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}
 
 .hero__title {
   margin-top: 8rem;
@@ -142,7 +137,6 @@ hr {
 .frontend,
 .backend {
   font-family: 'Permanent Marker', sans-serif;
-  // color: #f2efea;
   color: #f7ec59;
 }
 
