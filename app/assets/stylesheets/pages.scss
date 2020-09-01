@@ -93,22 +93,22 @@
   z-index: -99;
 }
 
-// .blur {
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: -49;
-//   height: 100%;
-//   -webkit-backdrop-filter: blur(2em);
-//   backdrop-filter: blur(6em);
-// }
+.blur {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -49;
+  height: 100%;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
 
-// @supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
+// @supports (-webkit-backdrop-filter: blur(2px)) or (backdrop-filter: blur(2px)) {
 //   .blur {
-//     -webkit-backdrop-filter: blur(2em);
-//     backdrop-filter: blur(3px);
+//     -webkit-backdrop-filter: blur(2px);
+//     backdrop-filter: blur(2px);
 //   }
 // }
 
