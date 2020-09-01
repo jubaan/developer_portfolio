@@ -82,21 +82,43 @@
   right: 0;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background: rgb(2, 0, 36);
-  // background: url('https://images.unsplash.com/photo-1490604001847-b712b0c2f967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80') 50% 75% no-repeat;
-  // background: url('https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1494&q=80') 50% 0% no-repeat;
-  // background: linear-gradient(180deg, rgba(238,174,202,1) 0%, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5074404761904762) 85%), url('https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 80% no-repeat;
-  // background: url('https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80') 50% 70% no-repeat;
   background:
     linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.3) 0%,
-      rgba(0, 0, 0, 0.4) 80%
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 0.6) 100%
     ),
-    url('https://images.unsplash.com/photo-1580796726313-7b2861e4a38b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 70% no-repeat;
+    url('https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1494&q=80') 50% 0% no-repeat;
+  // background: url('https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80') 50% 70% no-repeat;
+  // background:
+  //   linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 0.3) 0%,
+  //     rgba(0, 0, 0, 0.4) 80%
+  //   ),
+  //   url('https://images.unsplash.com/photo-1580796726313-7b2861e4a38b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 70% no-repeat;
   background-size: cover;
   z-index: -99;
 }
+
+// .blur {
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: -49;
+//   height: 100%;
+//   -webkit-backdrop-filter: blur(2em);
+//   backdrop-filter: blur(6em);
+// }
+
+// @supports (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em)) {
+//   .blur {
+//     -webkit-backdrop-filter: blur(2em);
+//     backdrop-filter: blur(3px);
+//   }
+// }
 
 .hero__title {
   margin-top: 8rem;
@@ -122,7 +144,7 @@ hr {
 .hero__description {
   margin-top: 1rem;
   font-size: 1.3rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #f2efea;
 }
 
