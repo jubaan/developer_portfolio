@@ -27,7 +27,6 @@
 .navbar {
   justify-content: space-between;
   margin-top: 3rem;
-  margin-bottom: 1rem;
 }
 
 .social__item {
@@ -71,10 +70,8 @@
 
 /* hero */
 .bg-hero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  top: -7rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   background:
@@ -85,7 +82,7 @@
     ),
     url('https://images.unsplash.com/photo-1501159599894-155982264a55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') 50% 70% no-repeat;
   background-size: cover;
-  z-index: -99;
+  z-index: -1;
 }
 
 .blur {
@@ -94,8 +91,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -49;
-  height: 100%;
+  z-index: -1;
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
@@ -171,4 +167,35 @@ hr {
   font-family: 'Roboto', sans-serif;
   font-size: 0.9rem;
   color: #f2efea;
+}
+
+/* footer */
+.bg-footer {
+  position: relative;
+  top: -7rem;
+  background: #001a23;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  .navbar {
+    margin-top: 2rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__name {
+    font-size: 2rem;
+  }
+
+  .hero__description,
+  .frontend,
+  .backend {
+    font-size: 1.1rem;
+  }
 }
