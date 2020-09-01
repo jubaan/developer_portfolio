@@ -26,7 +26,7 @@
 /* navbar */
 .navbar {
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
@@ -39,20 +39,20 @@
 }
 
 .social__link i {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .social__link i:hover {
-  color: #fff;
+  color: #f2efea;
 }
 
 .navbar__brand {
   padding: 1px 15px 1px 1px;
   border-radius: 40px;
-  background: #fff;
+  background: #f2efea;
   font-family: 'Permanent Marker', sans-serif;
 }
 
@@ -80,25 +80,38 @@
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 6rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   background: rgb(2, 0, 36);
-  background: url('https://images.unsplash.com/photo-1490604001847-b712b0c2f967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80') 50% 50% no-repeat;
+  background: url('https://images.unsplash.com/photo-1490604001847-b712b0c2f967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1980&q=80') 50% 75% no-repeat;
+  // background: url('https://images.unsplash.com/photo-1475694867812-f82b8696d610?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80') 50% 75% no-repeat;
   background-size: cover;
   z-index: -99;
 }
 
 .hero__title {
   margin-top: 8rem;
+  margin-bottom: 1rem;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   max-width: 700px;
+  color: #f2efea;
 }
 
-// .hero__description {
-//   font-size: 3rem;
-// }
+.hero__name {
+  font-family: 'Permanent Marker', sans-serif;
+}
+
+hr {
+  border: 2px solid #f2efea;
+  width: 4rem;
+}
+
+.hero__description {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
 
 .hero__hashtag {
   font-size: 1.5rem;
@@ -106,18 +119,18 @@
 
 .hero__contact {
   margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .hero__email {
   padding: 10px 15px;
   border-radius: 40px;
-  background-color: #fff;
+  background-color: #f2efea;
 }
 
 .hero__whatsapp {
   padding: 10px 15px;
-  color: #fff;
+  color: #f2efea;
 }
 
 .available {
@@ -129,5 +142,5 @@
 
 .availability {
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: #f2efea;
 }
